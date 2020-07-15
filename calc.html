@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Simple calculator</title>
+    <link rel="stylesheet" href="stylecal.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="title">Simple calculator</h1>
+        <table>
+            <tr>
+
+                <td colspan="3"><input type="text" id="label" /></td>
+
+            </tr>
+            <tr>
+                <td><input class="clear" type="button" value=" Clear" onclick="clr()" /> </td>
+
+            </tr>
+            <tr>
+                <!-- creating buttons-->
+
+                <td><input class="input-btn" type="button" value="1" onclick="display('1')" /> </td>
+                <td><input class="input-btn" type="button" value="2" onclick="display('2')" /> </td>
+                <td><input class="input-btn" type="button" value="3" onclick="display('3')" /> </td>
+                <td><input class="input-btn" type="button" value="+" onclick="display('+')" /> </td>
+            </tr>
+            <tr>
+
+                <td><input class="input-btn" type="button" value="4" onclick="display('4')" /> </td>
+                <td><input class="input-btn" type="button" value="5" onclick="display('5')" /> </td>
+                <td><input class="input-btn" type="button" value="6" onclick="display('6')" /> </td>
+                <td><input class="input-btn" type="button" value="-" onclick="display('-')" /> </td>
+            </tr>
+            <tr>
+                <td><input class="input-btn" type="button" value="7" onclick="display('7')" /> </td>
+                <td><input class="input-btn" type="button" value="8" onclick="display('8')" /> </td>
+                <td><input class="input-btn" type="button" value="9" onclick="display('9')" /> </td>
+                <td><input class="input-btn" type="button" value="*" onclick="display('*')" /> </td>
+            </tr>
+            <tr>
+                <td><input class="input-btn" type="button" value="0" onclick="display('0')" /> </td>
+                <td><input class="input-btn" type="button" value="." onclick="display('.')" /> </td>
+                <td><input class="equal" type="button" value="=" onclick="solve()" /> </td>
+                <td><input class="input-btn" type="button" value="/" onclick="display('/')" /> </td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        //function for displaying values
+        function display(val) {
+            document.getElementById("label").value += val
+        }
+        //function for evaluation
+        function solve() {
+            let x = document.getElementById("label").value
+            let y = eval(x)
+            document.getElementById("label").value = y
+        }
+        //function for clearing the display
+        function clr() {
+            document.getElementById("label").value = ""
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    background-color: mediumslateblue;
+}
+
+.container {
+    width: 370px;
+    background-color: black;
+    margin: 120px auto;
+    border-radius: 10px;
+    padding: 10px;
+    border: lime 1.5px solid;
+    box-shadow: 5px 10px rgb(172, 240, 172);
+}
+
+table {
+    width: 100%;
+    border-color: teal;
+}
+
+td {
+    width: 25%;
+    margin-top: 10px;
+}
+
+#label {
+    height: 120px;
+    width: 270px;
+    border-radius: 5px;
+    border: lime 2px solid;
+    margin-bottom: 10px;
+    font-size: 40px;
+    margin-left: 20px;
+    background-color: black;
+    color: white;
+}
+
+.input-btn {
+    width: 70%;
+    height: 50px;
+    font-size: 25px;
+    background-color: lightgreen;
+    border: none;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    padding: 10px;
+    margin-top: 3px;
+}
+
+.equal {
+    width: 80%;
+    height: 50px;
+    font-size: 25px;
+    background-color: orange;
+    font-weight: bold;
+    border: none;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    padding: 10px;
+    margin-top: 3px;
+}
+
+.clear {
+    width: 180%;
+    height: 50px;
+    font-size: 25px;
+    background-color: lightgreen;
+    font-weight: bold;
+    color: orangered;
+    border: none;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.title {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: white;
+}
